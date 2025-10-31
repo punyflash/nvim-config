@@ -34,3 +34,7 @@ vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
 -- Save
 vim.keymap.set("n", "<leader>ww", ":w<CR>", { desc = "[W]rite" })
 vim.keymap.set("n", "<leader>wa", ":wa<CR>", { desc = "[W]rite [A]ll" })
+
+-- Move Line Up/Down
+vim.keymap.set("i", "<C-Up>", "<Esc>:m .-2<CR>==gi", { noremap = true, silent = true })
+vim.keymap.set("i", "<C-Down>", "<Esc>:m .+1<CR>==gi", { noremap = true, silent = true })
