@@ -22,7 +22,7 @@ return {
         event = 'VimEnter',
         dependencies = { 'nvim-tree/nvim-web-devicons', 'f-person/git-blame.nvim' },
         config = function()
-            local git_blame = require('gitblame')
+            local git_blame = require 'gitblame'
             require('lualine').setup {
                 options = {
                     icons_enabled = true,
@@ -45,26 +45,6 @@ return {
                 },
             }
         end,
-    },
-    {
-        'akinsho/bufferline.nvim',
-        dependencies = { 'nvim-tree/nvim-web-devicons' },
-        opts = {
-            options = {
-                separator_style = 'thin',
-                diagnostics = 'nvim_lsp',
-                color_icons = true,
-                offsets = {
-                    {
-                        filetype = 'NvimTree',
-                        text = 'Files',
-                        highlight = 'Directory',
-                        text_align = 'center',
-                        separator = true,
-                    },
-                },
-            },
-        },
     },
     {
         'folke/noice.nvim',
