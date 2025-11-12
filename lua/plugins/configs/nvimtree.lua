@@ -2,16 +2,16 @@
 -- https://github.com/nvim-tree/nvim-tree.lua
 
 return {
-    "nvim-tree/nvim-tree.lua",
-    event = "VimEnter",
+    'nvim-tree/nvim-tree.lua',
+    event = 'VimEnter',
     dependencies = {
-        "nvim-tree/nvim-web-devicons",
+        'nvim-tree/nvim-web-devicons',
     },
     keys = {
-        { "\\", ":NvimTreeToggle<CR>", desc = "NvimTree reveal", silent = true },
+        { '\\', ':NvimTreeToggle<CR>', desc = 'NvimTree reveal', silent = true },
     },
     opts = {
-        filters = { dotfiles = false },
+        filters = { dotfiles = false, custom = { '.git' } },
         hijack_cursor = true,
         sync_root_with_cwd = true,
         respect_buf_cwd = true,
@@ -20,7 +20,7 @@ return {
             update_root = true,
         },
         view = {
-            signcolumn = "no",
+            signcolumn = 'no',
             float = {
                 enable = false, -- disables floating window if you were using it
             },
@@ -31,15 +31,15 @@ return {
             indent_markers = { enable = true },
             icons = {
                 glyphs = {
-                    default = "󰈚",
+                    default = '󰈚',
                     folder = {
-                        default = "",
-                        empty = "",
-                        empty_open = "",
-                        open = "",
-                        symlink = "",
+                        default = '',
+                        empty = '',
+                        empty_open = '',
+                        open = '',
+                        symlink = '',
                     },
-                    git = { unmerged = "" },
+                    git = { unmerged = '' },
                 },
             },
         },
