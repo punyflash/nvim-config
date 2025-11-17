@@ -84,4 +84,4 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 vim.opt.termguicolors = true
-vim.opt.whichwrap = ",<,>,[,]"
+vim.opt.whichwrap = ',<,>,[,]'

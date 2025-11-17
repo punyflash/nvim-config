@@ -11,7 +11,7 @@ return {
         { '\\', ':NvimTreeToggle<CR>', desc = 'NvimTree reveal', silent = true },
     },
     opts = {
-        filters = { dotfiles = false, custom = { '.git' } },
+        filters = { dotfiles = false, custom = { '.git$' } },
         hijack_cursor = true,
         sync_root_with_cwd = true,
         respect_buf_cwd = true,
