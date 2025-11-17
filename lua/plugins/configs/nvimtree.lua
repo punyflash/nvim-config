@@ -8,7 +8,7 @@ return {
         'nvim-tree/nvim-web-devicons',
     },
     keys = {
-        { '\\', ':NvimTreeToggle<CR>', desc = 'NvimTree reveal', silent = true },
+        { '<a-\\>', ':NvimTreeToggle<CR>', desc = 'NvimTree reveal', silent = true },
     },
     opts = {
         filters = { dotfiles = false, custom = { '.git$' } },
